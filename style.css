@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: orange;
+    
+}
+
+ul{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+   
+}
+li .dropdown{
+    display: inline-block;
+}
+
+li a:hover{
+    background-color: orange;
+    
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: white;
+}
+
+.dropdown-content a{
+    color: green;
+    display: block;
+    text-align: left;
+    
+  
+}
+
+.dropdown:hover .dropdown-content{ 
+    display: block;
+}
+
+.main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    background-color:  rgb(141, 88, 88);
+}
+
+.headline{
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.headline h2{
+    font-weight: 900px;
+    font-size: 20px;
+    color: #180F4A;
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+
+.img-headline{
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    background-color: rgb(105, 45, 45);
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(171, 146, 101);
+}
+
+.sugestion{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    background-color: rgb(247, 237, 237);
+   
+}
+
+.sugestion h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    padding: 5%;  
+}
+
+.services{
+    display: inline-block;
+  
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: rgb(140, 125, 98);
+    color: white;
+    padding: 40px;
+}
+
+.card:hover img{
+    display: none;
+}
+
+.texto-oculto{
+    display: none; 
+}
+
+.rodape{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: rgb(0, 4, 255);
+    text-align: center;
+    justify-content: center;
+    font-family: 'century gothic';
+}
+.rodape i{
+    color: rgb(134, 142, 150);
+}
+.rodape hr{
+    color: silver;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.social-rodape{
+    margin-top: 30px;
+    color: black;
+}
+.social-rodape a i{
+    color: rgb(0, 4, 255);
+}
+.social-rodape a{
+    font-size: 13pt;
+    text-decoration: none;
+    color: rgb(134, 142, 150);
+    gap: 10px;
+}
+
+
+.rodape{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: rgb(0, 4, 255);
+    text-align: center;
+    justify-content: center;
+    font-family: 'century gothic';
+}
+.rodape i{
+    color: rgb(134, 142, 150);
+}
+.rodape hr{
+    color: silver;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.social-rodape{
+    margin-top: 20px;
+    color: black;
+}
+.social-rodape a i{
+    color: rgb(0, 4, 255);
+}
+.social-rodape a{
+    font-size: 13pt;
+    text-decoration: none;
+    color: rgb(134, 142, 150);
+}
+
+@media only screen and (max-width:1005px){
+    header ,nav{
+        position: relative;
+    }
+
+    .main{
+        padding-top: 30px;
+
+    }
+
+    .headline{
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .headline p{
+        text-align: center;
+    }
+    
+    .img-headline{
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .cards{
+       width: 100%; 
+    }
+
+    .whatsapp{
+        display: none;
+    }
+
+    .footer{
+        margin-top: 50px;
+    }
+}
+
